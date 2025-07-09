@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "3.7",
   title: "IndicF5",
-  description: "",
+  description: "High-Quality Text-to-Speech for Indian Languages",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("env")
