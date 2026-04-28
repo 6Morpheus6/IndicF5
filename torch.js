@@ -20,6 +20,7 @@ module.exports = {
       "when": "{{platform === 'win32' && gpu === 'amd'}}",
       "method": "shell.run",
       "params": {
+        "bluefairy": "off",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "uv pip install torch-directml torch torchaudio torchvision numpy==1.26.4 --force-reinstall"
@@ -53,6 +54,7 @@ module.exports = {
       "when": "{{platform === 'linux' && gpu === 'nvidia'}}",
       "method": "shell.run",
       "params": {
+        "bluefairy": "off",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
